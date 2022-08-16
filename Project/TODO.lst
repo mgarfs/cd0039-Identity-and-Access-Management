@@ -1,4 +1,4 @@
-./cd0039-Identity-and-Access-Management/Project/readme.md
+./cd0039-Identity-and-Access-Management/Project/03_coffee_shop_full_stack/starter_code/backend/src/auth/auth.py
 @TODO implement get_token_auth_header() method
 @TODO implement check_permissions(permission, payload) method
 @TODO implement verify_decode_jwt(token) method
