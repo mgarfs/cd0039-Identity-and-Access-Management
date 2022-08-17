@@ -17,28 +17,69 @@ CORS(app)
 !! NOTE THIS MUST BE UNCOMMENTED ON FIRST RUN
 !! Running this funciton will add one
 '''
-# db_drop_and_create_all()
+db_drop_and_create_all()
 
 # ROUTES
-'''
-@TODO implement endpoint
-    GET /drinks
-        it should be a public endpoint
-        it should contain only the drink.short() data representation
-    returns status code 200 and json {"success": True, "drinks": drinks} where drinks is the list of drinks
-        or appropriate status code indicating reason for failure
-'''
+
+@app.route('/drinks')
+def get_drinks():
+    """ GET /drinks - public endpoint
+    Returns the list of drinks with short description:
+    { 
+      "drinks: [
+        {
+          "id": 1,
+          "recipe": [
+            {
+              "color": "blue",
+              "parts": 1
+            }
+          ],
+          "title": "water"
+        },
+        ...
+      ],
+      "success": true,
+    }
+    """
+    # @TODO add authentificaiton and authorization
+    drinks=Drink.query.all()
+    all_drinks = [drink.short() for drink in drinks]
+    return jsonify({
+        "success": True,
+        "drinks": all_drinks
+    })
 
 
-'''
-@TODO implement endpoint
-    GET /drinks-detail
-        it should require the 'get:drinks-detail' permission
-        it should contain the drink.long() data representation
-    returns status code 200 and json {"success": True, "drinks": drinks} where drinks is the list of drinks
-        or appropriate status code indicating reason for failure
-'''
-
+@app.route('/drinks-detail')
+def get_drinks_detail():
+    """ GET /drinks-detail - requires 'get:drinks-detail' permission
+    Returns the list of drinks with detailed (long) description:
+    { 
+      "drinks: [
+        {
+          "id": 1,
+          "recipe": [
+            {
+              "color": "blue",
+              "name": "water",
+              "parts": 1
+            }
+          ],
+          "title": "water"
+        },
+        ...
+      ],
+      "success": true,
+    }
+    """
+    # @TODO add authentificaiton and authorization
+    drinks=Drink.query.all()
+    all_drinks = [drink.long() for drink in drinks]
+    return jsonify({
+        "success": True,
+        "drinks": all_drinks
+    })
 
 '''
 @TODO implement endpoint
