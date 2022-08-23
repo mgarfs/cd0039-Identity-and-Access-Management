@@ -1,28 +1,31 @@
 ./cd0039-Identity-and-Access-Management/Project/03_coffee_shop_full_stack/starter_code/backend/src/auth/auth.py
-@TODO implement get_token_auth_header() method
-@TODO implement check_permissions(permission, payload) method
-@TODO implement verify_decode_jwt(token) method
-@TODO implement @requires_auth(permission) decorator method
+@TODO implement get_token_auth_header() method <- DONE
+@TODO implement check_permissions(permission, payload) method <- DONE
+@TODO implement verify_decode_jwt(token) method <- DONE
+@TODO implement @requires_auth(permission) decorator method <- DONE
 
 ./cd0039-Identity-and-Access-Management/Project/03_coffee_shop_full_stack/starter_code/backend/src/api.py
-@TODO uncomment the following line to initialize the datbase
-@TODO implement endpoint
-@TODO implement endpoint
-@TODO implement endpoint
-@TODO implement endpoint
-@TODO implement endpoint
-@TODO implement error handlers using the @app.errorhandler(error) decorator
-@TODO implement error handler for 404
-@TODO implement error handler for AuthError
+@TODO uncomment the following line to initialize the datbase <- DONE
+@TODO implement endpoint <- DONE 
+@TODO implement endpoint <- DONE
+@TODO implement endpoint <- DONE
+@TODO implement endpoint <- DONE
+@TODO implement endpoint <- DONE
+@TODO implement error handlers using the @app.errorhandler(error) decorator <- DONE
+@TODO implement error handler for 404 <- DONE
+@TODO implement error handler for AuthError <- SKIPPED, handled in auth.py
+
 
 ./cd0039-Identity-and-Access-Management/Project/03_coffee_shop_full_stack/starter_code/backend/README.md
 There are `@TODO` comments throughout the `./backend/src`. We recommend tackling the files in order and from top to bottom:
+<- DONE
 
 ./cd0039-Identity-and-Access-Management/Project/03_coffee_shop_full_stack/starter_code/README.md
 There are `@TODO` comments throughout the project. We recommend tackling the sections in order. Start by reading the READMEs in:
+<- DONE
 
 ./cd0039-Identity-and-Access-Management/Project/03_coffee_shop_full_stack/starter_code/frontend/src/app/app.component.spec.ts
-  // TODO: add more tests!
+  // TODO: add more tests! <- SKIPPED; OPTIONAL
 
 ./cd0039-Identity-and-Access-Management/Project/03_coffee_shop_full_stack/starter_code/frontend/src/environments/environment.ts
-/* @TODO replace with your variables
+/* @TODO replace with your variables <- DONE

@@ -62,9 +62,9 @@ _After Forking and Cloning GitHub repo_
 
  &nbsp;&nbsp;&nbsp;  OPTIONAL: [ &nbsp;] Check _Key Software Design Relevant to Our Coursework_ (as described in `./frontend/README.md`)
 
-5: (2,3:->) [ &nbsp;] Perform changes in `./backend/src/auth/auth.py`
+5: (2,3:->) [X] Perform changes in `./backend/src/auth/auth.py`
 
-6: (2,3:->) [ &nbsp;] Perform changes in `./backend/src/api.py`
+6: (2,3:->) [X] Perform changes in `./backend/src/api.py`
 
 7: (2:->) OPTIONAL: [ &nbsp;] Add more tests in `./frontend/src/app/app.component.spec.ts`
 
